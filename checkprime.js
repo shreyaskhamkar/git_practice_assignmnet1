@@ -1,12 +1,11 @@
 function isPrime(num) {
-
-  let factor = 0;
+  let counter = 0;
   for (let i = 1; i <= num; i++) {
     if (num % i == 0) {
-      factor++;
+      counter++;
     }
   }
-  return factor == 2
+  return counter == 2;
 }
 let n=8;
 let ans = isPrime(n);
